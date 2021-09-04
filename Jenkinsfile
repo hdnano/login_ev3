@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        junit(allowEmptyResults: true, testResults: '1')
+        archiveArtifacts(artifacts: 'login', allowEmptyArchive: true, caseSensitive: true, defaultExcludes: true)
       }
     }
 
