@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sleep 4
+        git(url: 'https://hdnano1@bitbucket.org/hdnano1/login_3.git', branch: 'main')
       }
     }
 
